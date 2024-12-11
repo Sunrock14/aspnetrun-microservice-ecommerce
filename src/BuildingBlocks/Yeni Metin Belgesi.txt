@@ -1,0 +1,12 @@
+public abstract class BaseEntity  
+    {  
+        public string Id { get; set; }  
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;  
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;  
+    }  
+
+    public class Pagination  
+    {  
+        public int PageNumber { get; set; } = 1;  
+        public int PageSize { get; set; } = 10;  
+    } 
