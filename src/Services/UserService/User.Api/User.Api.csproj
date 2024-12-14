@@ -10,4 +10,12 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Application\Features\Queries\" />
+    <Folder Include="Application\Features\Handlers\" />
+    <Folder Include="Application\Features\Commands\" />
+    <Folder Include="Persistence\" />
+    <Folder Include="Infrastructure\" />
+  </ItemGroup>
+
 </Project>

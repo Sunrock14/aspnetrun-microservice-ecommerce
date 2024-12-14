@@ -1,12 +1,85 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Shared.Library.Entities;
+using System.Linq.Expressions;
 
-namespace Shared.Library.GenericRepositories
+namespace Shared.Library.GenericRepositories;
+
+public interface IGenericRepository<T> where T : class, IEntity, new()
 {
-    internal interface IGenericRepository
-    {
-    }
+    /// <summary>
+    /// Tek bir kayıtı getirmek için kullanılır
+    /// </summary>
+    /// <param name="predicate"></param>
+    /// <param name="includeProperties"></param>
+    /// <returns></returns>
+    Task<T> GetAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
+    /// <summary>
+    /// Tek bir kayıtı getirmek için kullanılır
+    /// </summary>
+    /// <param name="predicate"></param>
+    /// <param name="includeProperties"></param>
+    /// <returns></returns>
+    Task<T> GetLastAsync(Expression<Func<T, bool>> predicate, Expression<Func<T, object>> orderBy, params Expression<Func<T, object>>[] includeProperties);
+    /// <summary>
+    /// Birden fazla kayıtı getirmek için kullanılır
+    /// </summary>
+    /// <param name="predicate"></param>
+    /// <param name="includeProperties"></param>
+    /// <returns></returns>
+    Task<IList<T>> GetAllAsync(Expression<Func<T, bool>>? predicate = null, params Expression<Func<T, object>>[] includeProperties);
+    /// <summary>
+    /// Bir kayıt eklemek için kullanılır
+    /// </summary>
+    /// <param name="entity"></param>
+    /// <returns></returns>
+    Task<T> AddAsync(T entity);
+    /// <summary>
+    /// Birden Fazla kayıt eklemek için kullanılır
+    /// </summary>
+    /// <param name="entities"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    Task<IList<T>> AddRangeAsync(IList<T> entities, CancellationToken cancellationToken = default);
+    /// <summary>
+    /// Bir kayıtı güncellemek için kullanılır
+    /// </summary>
+    /// <param name="entity"></param>
+    /// <returns></returns>
+    Task<T> UpdateAsync(T entity);
+    /// <summary>
+    /// Bir kayıtı silmek için kullanılır
+    /// </summary>
+    /// <param name="entity"></param>
+    /// <returns></returns>
+    Task DeleteAsync(T entity);
+    /// <summary>
+    /// Bilgisi verilen kayıtın olup olmadığını kontrol eder
+    /// </summary>
+    /// <param name="predicate"></param>
+    /// <returns></returns>
+    Task<bool> AnyAsync(Expression<Func<T, bool>> predicate);
+    /// <summary>
+    /// Verilen sorguya göre kaç adet kayıt var onun sayısını getirir
+    /// </summary>
+    /// <param name="predicate"></param>
+    /// <returns></returns>
+    Task<int> CountAsync(Expression<Func<T, bool>>? predicate = null);
+    /// <summary>
+    /// Sorgusu verilen bir kayıtı getirir
+    /// </summary>
+    /// <param name="predicate"></param>
+    /// <returns></returns>
+    Task<T> FindAsync(Expression<Func<T, bool>>? predicate = null);
+    /// <summary>
+    /// Sorgusu verilen birden fazla kayıtı getirir
+    /// </summary>
+    /// <param name="predicate"></param>
+    /// <returns></returns>
+    Task<IList<T>> FindAllAsync(Expression<Func<T, bool>>? predicate);
+    /// <summary>
+    /// Kompleks sorgular yazmak için kullanılır
+    /// </summary>
+    /// <returns></returns>
+    IQueryable<T> QueryAsync();
 }
+
+

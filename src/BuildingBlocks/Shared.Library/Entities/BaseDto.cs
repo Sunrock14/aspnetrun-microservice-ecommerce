@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Shared.Library.Entities;
 
-namespace Shared.Library.Entities
-{
-    internal class BaseDto
-    {
-    }
+public abstract class BaseDto
+{    
+    public virtual bool IsSuccess { get; set; } = true;
+    public virtual string Message { get; set; } = string.Empty;
 }

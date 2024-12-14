@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Shared.Library.Entities;
 
-namespace Shared.Library.Entities
+public abstract class BaseEntityId
 {
-    internal class BaseDto
-    {
-    }
+    public virtual int Id { get; set; }
+
 }

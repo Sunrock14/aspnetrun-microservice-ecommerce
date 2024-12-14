@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\faruk\\OneDrive\\Masa\u00FCst\u00FC\\aspnetrun-microservice-ecommerce\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E3C42CB4-6291-4DD7-AF08-13A623038D06}|src\\Services\\UserService\\User.Api\\User.Api.csproj|c:\\users\\faruk\\onedrive\\masa\u00FCst\u00FC\\aspnetrun-microservice-ecommerce\\src\\services\\userservice\\user.api\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3C42CB4-6291-4DD7-AF08-13A623038D06}|src\\Services\\UserService\\User.Api\\User.Api.csproj|solutionrelative:src\\services\\userservice\\user.api\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +23,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\faruk\\OneDrive\\Masa\u00FCst\u00FC\\aspnetrun-microservice-ecommerce\\src\\Services\\UserService\\User.Api\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "src\\Services\\UserService\\User.Api\\Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\faruk\\OneDrive\\Masa\u00FCst\u00FC\\aspnetrun-microservice-ecommerce\\src\\Services\\UserService\\User.Api\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "src\\Services\\UserService\\User.Api\\Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T22:04:48.924Z",
+              "EditorCaption": ""
             }
           ]
         }

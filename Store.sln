@@ -51,6 +51,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Library", "src\BuildingBlocks\Shared.Library\Shared.Library.csproj", "{3D6A962C-DE20-4A83-9689-19F9287E2C86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User.Domain", "src\UserService\User.Domain\User.Domain.csproj", "{CA0BAF89-1210-4131-8203-9C9BDCE66523}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{3D6A962C-DE20-4A83-9689-19F9287E2C86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D6A962C-DE20-4A83-9689-19F9287E2C86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D6A962C-DE20-4A83-9689-19F9287E2C86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA0BAF89-1210-4131-8203-9C9BDCE66523}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA0BAF89-1210-4131-8203-9C9BDCE66523}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA0BAF89-1210-4131-8203-9C9BDCE66523}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA0BAF89-1210-4131-8203-9C9BDCE66523}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,5 +113,6 @@ Global
 		{778916D4-CB2D-4DCB-B959-25F70DC1E8EF} = {7B5469C8-4BFF-4DEE-8C75-626E3D78565C}
 		{7E48FDAC-EE2D-43F5-B0D0-CC1994148D92} = {EE8AD2A1-9CD6-4719-BDCE-E3E0F3A10C15}
 		{3D6A962C-DE20-4A83-9689-19F9287E2C86} = {7E48FDAC-EE2D-43F5-B0D0-CC1994148D92}
+		{CA0BAF89-1210-4131-8203-9C9BDCE66523} = {D774C2CE-E3B1-44E5-B4A0-EC48C1C13537}
 	EndGlobalSection
 EndGlobal
